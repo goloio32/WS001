@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.b2mc.fr/sitemap.xml
+
+# Allow all robots complete access
+Disallow:
+
+# Prevent caching of files not meant for SEO
+Disallow: /css/
+Disallow: /js/
+Disallow: /fonts/

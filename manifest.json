@@ -1,0 +1,18 @@
+{
+  "name": "B2MC - Expert en Ingénierie Structurelle",
+  "short_name": "B2MC",
+  "description": "Bureau d'études structures spécialisé en maçonnerie, béton, acier et bois",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3c2904",
+  "icons": [
+    {
+      "src": "images/fevicon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "lang": "fr-FR",
+  "dir": "ltr"
+}

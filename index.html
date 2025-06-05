@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
   <!-- Basic -->
@@ -8,32 +8,81 @@
   <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   <!-- Site Metas -->
-  <meta name="keywords" content="Ingénierie Structurelle, B2MC, Maçonnerie, Béton, Acier, Bois" />
-  <meta name="description"
-    content="B2MC offre un accompagnement dédié et structuré pour les projets de construction avec une expertise en maçonnerie, béton, acier, bois et diagnostics structurels." />
+  <meta name="keywords" content="Ingénierie Structurelle, B2MC, Maçonnerie, Béton, Acier, Bois, Bureau d'études structures, Calcul de structures, Expertise construction, Diagnostic structurel, Ingénieur structure France" />
+  <meta name="description" content="B2MC - Expert en ingénierie structurelle à Paris. Spécialiste en maçonnerie, béton, acier et bois. Solutions innovantes pour vos projets de construction et rénovation. Diagnostic structurel et accompagnement personnalisé." />
   <meta name="author" content="B2MC" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="fr" />
+  <meta property="og:title" content="B2MC - Expert en Ingénierie Structurelle" />
+  <meta property="og:description" content="Bureau d'études structures spécialisé en maçonnerie, béton, acier et bois. Solutions innovantes et expertise technique pour vos projets." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+  <link rel="canonical" href="https://www.b2mc.fr/" />
   <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
 
-  <title>B2MC</title>
+  <title>B2MC - Bureau d'Études Structures | Expert en Ingénierie Structurelle</title>
 
-  <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <!-- Critical CSS -->
+  <style>
+    /* Include contents of critical.css inline */
+    @import url('css/critical.css');
+  </style>
 
-  <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Preload critical resources -->
+  <link rel="preload" href="images/logo_a.png" as="image">
+  <link rel="preload" href="fonts/fontawesome-webfont.woff2" as="font" type="font/woff2" crossorigin>
+  
+  <!-- async CSS loading -->
+  <link rel="preload" href="css/bootstrap.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+  </noscript>
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Defer non-critical CSS -->
+  <link rel="stylesheet" href="css/responsive.css" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="css/font-awesome.min.css" media="print" onload="this.media='all'">
 
-  <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- Preconnect to required origins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
 
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
-  <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <!-- Defer JavaScript -->
+  <script defer src="js/jquery-3.4.1.min.js"></script>
+  <script defer src="js/bootstrap.js"></script>
+  <script defer src="js/custom.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EngineeringOrganization",
+      "name": "B2MC",
+      "description": "Bureau d'études structures spécialisé en maçonnerie, béton, acier et bois",
+      "url": "https://www.b2mc.fr",
+      "telephone": "+33623446273",
+      "sameAs": [
+        "https://www.linkedin.com/company/b2mc",
+        "https://www.facebook.com/b2mc"
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "FR"
+      },
+      "areaServed": "France",
+      "serviceType": ["Ingénierie Structurelle", "Diagnostic Structurel", "Calcul de Structures"],
+      "services": [
+        "Maçonnerie",
+        "Béton",
+        "Acier",
+        "Bois",
+        "Diagnostic structurel",
+        "Calcul de structures"
+      ]
+    }
+  </script>
 </head>
 
 <body>
@@ -68,27 +117,27 @@
       <div class="header_bottom">
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container">
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand" href="index.html" title="B2MC - Expert en Ingénierie Structurelle">
               <span>
-                <img src="images/logo_a.png" alt="" style="width: 150px;height: 50px;">
+                <img src="images/logo_a.png" alt="Logo B2MC - Bureau d'études structures" style="width: 150px;height: 50px;">
               </span>
             </a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Menu de navigation">
               <span class=""> </span>
             </button>
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav">
+              <ul class="navbar-nav" role="navigation" aria-label="Menu principal">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Accueil <span class="sr-only">(actuel)</span></a>
+                  <a class="nav-link" href="index.html" aria-current="page">Accueil <span class="sr-only">(page actuelle)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="realisation.html">Réalisations</a>
+                  <a class="nav-link" href="realisation.html" title="Nos projets d'ingénierie structurelle">Réalisations</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
+                  <a class="nav-link" href="contact.html" title="Contactez notre équipe d'experts">Contact</a>
                 </li>
               </ul>
             </div>
@@ -101,7 +150,7 @@
     <!-- slider section -->
     <section class="slider_section ">
       <div class="slider_bg_box">
-        <img src="images/a.jpg" alt="">
+        <img src="images/a.jpg" alt="Projet d'ingénierie structurelle B2MC" loading="lazy">
       </div>
       <div id="customCarousel1" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">

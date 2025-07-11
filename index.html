@@ -10,8 +10,28 @@
 
     <script type="text/javascript">
         var _iub = _iub || [];
-        _iub.csConfiguration = {"siteId":4144779,"cookiePolicyId":39530308,"lang":"fr","storage":{"useSiteId":true}};
+        _iub.csConfiguration = {
+            "siteId": 4144779,
+            "cookiePolicyId": 39530308,
+            "lang": "fr",
+            "storage": {"useSiteId": true}
+        };
     </script>
+    <!-- Event snippet for Click to call conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+    <script> function gtag_report_conversion(url) {
+        var callback = function () {
+            if (typeof (url) != 'undefined') {
+                window.location = url;
+            }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-16712272129/fwGrCMGQ0O4aEIGShKE-',
+            'value': 1.0,
+            'currency': 'EUR',
+            'event_callback': callback
+        });
+        return false;
+    } </script>
     <!-- Site Metas -->
     <meta name="keywords"
           content="Ingénierie Structurelle, B2MC, Maçonnerie, Béton, Acier, Bois, Bureau d'études structures, Calcul de structures, Expertise construction, Diagnostic structurel, Ingénieur structure France, Renforcement par plaques carbone, Construction d'une charpente métallique, Construction d'une charpente en bois, Construction d'un bâtiment industriel, Réparation des fissures, Injection de la résine expansive, Comment construire une maison, Réaliser une mezzanine, Création d'ouverture dans un mur, suivi des chantiers"/>
@@ -28,7 +48,8 @@
     <link rel="canonical" href="https://www.b2mc.net/"/>
     <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
 
-    <title>B2MC - Bureau d'Études Structures | Renforcement par plaques carbone, Construction de charpentes, Réparation des fissures</title>
+    <title>B2MC - Bureau d'Études Structures | Renforcement par plaques carbone, Construction de charpentes, Réparation
+        des fissures</title>
 
     <!-- Critical CSS -->
     <style>
@@ -114,11 +135,15 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16712272129"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
 
-      gtag('config', 'AW-16712272129');
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'AW-16712272129');
     </script>
 </head>
 
@@ -206,8 +231,10 @@
                                         Métalliques et en Bois
                                     </h1>
                                     <p>
-                                        B2MC propose des études optimisées pour la construction de charpentes métalliques et en bois,
-                                        la construction de bâtiments industriels, et vous guide sur comment construire une maison
+                                        B2MC propose des études optimisées pour la construction de charpentes
+                                        métalliques et en bois,
+                                        la construction de bâtiments industriels, et vous guide sur comment construire
+                                        une maison
                                         ou réaliser une mezzanine.
                                     </p>
                                 </div>
@@ -245,7 +272,7 @@
                                     </h1>
                                     <p>
                                         B2MC est expert dans le renforcement des structures béton par l’utilisation de
-                                        plaques carbone, garantissant la durabilité des ouvrages et permettant la 
+                                        plaques carbone, garantissant la durabilité des ouvrages et permettant la
                                         création d'ouvertures dans les murs porteurs.
                                     </p>
                                 </div>
@@ -309,8 +336,8 @@
                                 Construction de Charpentes Métalliques et en Bois
                             </h5>
                             <p>
-                                Conception et étude des charpentes métalliques et en bois pour tout type de bâtiment, 
-                                y compris les bâtiments industriels. Expertise dans la construction de maisons et la 
+                                Conception et étude des charpentes métalliques et en bois pour tout type de bâtiment,
+                                y compris les bâtiments industriels. Expertise dans la construction de maisons et la
                                 réalisation de mezzanines.
                             </p>
                         </div>
@@ -327,7 +354,8 @@
                             </h5>
                             <p>
                                 Solutions de renforcement structurel avec des plaques en fibre de carbone, adaptées aux
-                                contraintes futures. Idéal pour la rénovation et le renforcement des structures existantes.
+                                contraintes futures. Idéal pour la rénovation et le renforcement des structures
+                                existantes.
                             </p>
                         </div>
                     </div>
@@ -342,8 +370,9 @@
                                 Diagnostic, Réparation et Réhabilitation
                             </h5>
                             <p>
-                                Diagnostic complet des pathologies structurelles, réparation des fissures par injection 
-                                de résine expansive, et création d'ouvertures dans les murs porteurs. Solutions complètes 
+                                Diagnostic complet des pathologies structurelles, réparation des fissures par injection
+                                de résine expansive, et création d'ouvertures dans les murs porteurs. Solutions
+                                complètes
                                 de réhabilitation pour tous types de bâtiments.
                             </p>
                         </div>
@@ -413,7 +442,8 @@
                     <p>
                         Nous avons une expertise avérée dans la réhabilitation des structures existantes, garantissant
                         durabilité
-                        et sécurité tout en respectant les exigences modernes. Découvrez nos projets de réhabilitation qui
+                        et sécurité tout en respectant les exigences modernes. Découvrez nos projets de réhabilitation
+                        qui
                         redonnent vie aux infrastructures vieillissantes.
                     </p>
                     <a href="realisation.html#rehabilitation" class="btn btn-primary"
@@ -470,24 +500,27 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6">
-              <div class="heading_container">
-                <h2>
-                  Suivi des Chantiers
-                </h2>
-              </div>
-              <p>
-                Nous assurons un suivi rigoureux de vos chantiers en temps réel. Notre équipe d'experts vous tient informés 
-                de chaque étape de la conception et de la réalisation de vos projets, garantissant ainsi une
-                transparence totale et une communication fluide tout au long de notre collaboration. Que ce soit pour la 
-                construction d'un bâtiment industriel, la réalisation d'une mezzanine ou la création d'ouvertures dans un mur, 
-                notre suivi de chantier vous assure qualité et sérénité.
-              </p>
-              <form action="">
-                <input type="text" placeholder="Entrez Votre Numéro de Projet" />
-                <button type="submit">
-                  Suivre
-                </button>
-              </form>
+                <div class="heading_container">
+                    <h2>
+                        Suivi des Chantiers
+                    </h2>
+                </div>
+                <p>
+                    Nous assurons un suivi rigoureux de vos chantiers en temps réel. Notre équipe d'experts vous tient
+                    informés
+                    de chaque étape de la conception et de la réalisation de vos projets, garantissant ainsi une
+                    transparence totale et une communication fluide tout au long de notre collaboration. Que ce soit
+                    pour la
+                    construction d'un bâtiment industriel, la réalisation d'une mezzanine ou la création d'ouvertures
+                    dans un mur,
+                    notre suivi de chantier vous assure qualité et sérénité.
+                </p>
+                <form action="">
+                    <input type="text" placeholder="Entrez Votre Numéro de Projet"/>
+                    <button type="submit">
+                        Suivre
+                    </button>
+                </form>
             </div>
         </div>
     </div>

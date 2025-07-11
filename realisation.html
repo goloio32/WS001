@@ -49,13 +49,8 @@
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
-  <!--owl slider stylesheet -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
@@ -333,76 +328,13 @@
   </section>
 
   <!-- footer section -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
-  <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- popper js -->
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
   <!-- bootstrap js -->
   <script type="text/javascript" src="js/bootstrap.js"></script>
-  <!-- owl slider -->
-  <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   <!-- custom js -->
   <script type="text/javascript" src="js/custom.js"></script>
-  <!-- Add custom JavaScript for form alert -->
   <script>
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-      event.preventDefault(); // Prevent the default form submission
-      const form = event.target;
-
-      fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-      }).then(response => {
-        if (response.ok) {
-          alert("Votre message a été envoyé avec succès. Nous vous contacterons bientôt.");
-          form.reset();
-        } else {
-          alert("Une erreur s'est produite. Veuillez réessayer.");
-        }
-      }).catch(error => {
-        alert("Une erreur s'est produite. Veuillez réessayer.");
-      });
-    });
-
-    // Initialize Leaflet.js map
-    var mymap = L.map('mapid', {
-      scrollWheelZoom: false // Disable scroll wheel zoom
-    }).setView([48.898553, 2.093202], 15);
-
-    // Add OpenStreetMap tiles
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(mymap);
-
-    // Add a marker to the map
-    var marker = L.marker([48.898553, 2.093202]).addTo(mymap);
-    marker.bindPopup("<b>20 ter rue Schnapper</b><br>78100 Saint-Germain-en-Laye").openPopup();
-
-    // Create a button to get directions
-    var directionButton = L.control({ position: 'bottomright' });
-    directionButton.onAdd = function (map) {
-      var div = L.DomUtil.create('div', 'direction-button');
-      div.innerHTML = '<button id="getDirections" style="padding: 10px 20px; background-color: #007bff; color: white; border: none; cursor: pointer; font-size: 16px;">Directions</button>';
-      return div;
-    };
-    directionButton.addTo(mymap);
-
-    // Add event listener to the button for directions using the full address
-    document.getElementById('getDirections').addEventListener('click', function () {
-      window.open('https://www.google.com/maps/dir/?api=1&destination=20+ter+Rue+Schnapper,+78100+Saint-Germain-en-Laye,+France', '_blank');
-    });
-
-    // Event listener for the link to trigger the "Get Directions" button click
-    document.getElementById('mapLink').addEventListener('click', function (e) {
-      e.preventDefault(); // Prevent default action of the link
-      document.getElementById('getDirections').click(); // Programmatically trigger the "Get Directions" button
-    });
-
     document.addEventListener('DOMContentLoaded', function () {
       // Get the hash fragment from the URL
       var hash = window.location.hash;
